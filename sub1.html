@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<html lang="ko">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+
+    <script>
+        // Audio 객체 생성
+        var audio = new Audio('./sound.mp3');
+        console.log(typeof audio + " " + audio);
+        window.onload = function () {
+            // span 객체 얻기
+            var current = document.getElementById('current');
+            var total = document.getElementById('total');
+            // progress 객체 얻기
+            var progress = document.getElementById('progress');
+
+            // Audio 객체에 timeupdate 이벤트 처리를 위한 리스너 부착
+            // addEventListener() 함수 사용
+            audio.addEventListener('timeupdate', function () {
+
+            });
+        };
+
+        // 재생버튼시 호출하는 함수
+        var play = function () {
+            audio.play();
+        };
+
+        // 일시정지버튼시 호출하는 함수
+        var pause = function () {
+            audio.pause();
+        };
+
+        // 정지버튼시 호출하는 함수
+        var stop = function () {
+            // stio 함수는 별도로 없어서 따로 이런식으로 만들자.
+            if (audio.played) {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        };
+    </script>
+
+
+	<title>연결 페이지</title>
+</head>
+<body>
+	  <div class="marquee">
+   <p>왜 그랬지 지금와서 드는 생각인데 아 후회된다 안되는 줄 알면서 왜 그랬을까 그러지 말걸 까맣게 잊은 줄만 알았어 한 번 더 참을 걸 그런짓은 하지 말았어야 했어 지난날처럼 되돌아 올 순 없겠지 좀 더 생각할 걸 왜 그런 말을 했지 시간을 되돌리고 싶다 미안해</p>
+  </div>
+
+      <div class="audio_btn">
+        <input type="button" value="▶" onclick="play()" />
+        <input class="stop_btn" type="button" value="■" onclick="stop()" />
+        <span id="current"></span> <span id="total"></span>
+    </div>
+
+  <div class="wrap-vertical">
+  	<p class="main_image_text">위에 지나가고 있는 말들은 내가 후회를 할 때 많이 하는 말이다. 우리 모두가 지난 날에 대한 혹은 지금 이 상황에 대한 후회를 해본 적이 있을 것이다. 지금도 나는 후회를 하고 있다. 새벽에 라면 먹지 말 걸. 그냥 참았다가 아침에 먹을 걸. 건강에 도움이 되는 음식도 아닌데 왜 그랬을까 그치만 안 먹었다면 내 정신 건강엔 도움이 안 되지 않았을까. 당신은 어떤 후회를 하고 있는가? 그 후회를 털어냈는가? 아니면 아직까지 토해내지 못하고 가지고 있는가?<br>
+  		위에 지나가고 있는 말들은 내가 후회를 할 때 많이 하는 말이다. 우리 모두가 지난 날에 대한 혹은 지금 이 상황에 대한 후회를 해본 적이 있을 것이다. 지금도 나는 후회를 하고 있다. 새벽에 라면 먹지 말 걸. 그냥 참았다가 아침에 먹을 걸. 건강에 도움이 되는 음식도 아닌데 왜 그랬을까 그치만 안 먹었다면 내 정신 건강엔 도움이 안 되지 않았을까. 당신은 어떤 후회를 하고 있는가? 그 후회를 털어냈는가? 아니면 아직까지 토해내지 못하고 가지고 있는가?<br>
+  		위에 지나가고 있는 말들은 내가 후회를 할 때 많이 하는 말이다. 우리 모두가 지난 날에 대한 혹은 지금 이 상황에 대한 후회를 해본 적이 있을 것이다. 지금도 나는 후회를 하고 있다. 새벽에 라면 먹지 말 걸. 그냥 참았다가 아침에 먹을 걸. 건강에 도움이 되는 음식도 아닌데 왜 그랬을까 그치만 안 먹었다면 내 정신 건강엔 도움이 안 되지 않았을까. 당신은 어떤 후회를 하고 있는가? 그 후회를 털어냈는가? 아니면 아직까지 토해내지 못하고 가지고 있는가?<br>
+  		위에 지나가고 있는 말들은 내가 후회를 할 때 많이 하는 말이다. 우리 모두가 지난 날에 대한 혹은 지금 이 상황에 대한 후회를 해본 적이 있을 것이다. 지금도 나는 후회를 하고 있다. 새벽에 라면 먹지 말 걸. 그냥 참았다가 아침에 먹을 걸. 건강에 도움이 되는 음식도 아닌데 왜 그랬을까 그치만 안 먹었다면 내 정신 건강엔 도움이 안 되지 않았을까. 당신은 어떤 후회를 하고 있는가? 그 후회를 털어냈는가? 아니면 아직까지 토해내지 못하고 가지고 있는가?<br>
+  		위에 지나가고 있는 말들은 내가 후회를 할 때 많이 하는 말이다. 우리 모두가 지난 날에 대한 혹은 지금 이 상황에 대한 후회를 해본 적이 있을 것이다. 지금도 나는 후회를 하고 있다. 새벽에 라면 먹지 말 걸. 그냥 참았다가 아침에 먹을 걸. 건강에 도움이 되는 음식도 아닌데 왜 그랬을까 그치만 안 먹었다면 내 정신 건강엔 도움이 안 되지 않았을까. 당신은 어떤 후회를 하고 있는가? 그 후회를 털어냈는가? 아니면 아직까지 토해내지 못하고 가지고 있는가?<br>
+  	</p>
+
+
+  	<img src="./3.png">
+  	<img src="./3.png">
+  	<img src="./3.png">
+  	<img src="./3.png">
+  	<img src="./3.png">
+  	<img src="./3.png">
+  	<img src="./3.png">
+  	<img src="./3.png">
+  	<img src="./3.png">
+  	<img src="./3.png">
+  	<img src="./3.png">
+  	<img src="./3.png">
+  	<img src="./3.png">
+  </div>
+  <div class="text_2">
+  		
+  </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative; 
+    float:left;
+  border: 25px dotted black;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.textbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(0,0,0);
+}
+
+.container:hover .textbox {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container1 {
+  position: relative; 
+    float:left;
+  border: 25px dotted black;
+}
+
+.image1 {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.textbox1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(0,0,0);
+}
+
+.container1:hover .textbox1 {
+  opacity: 0.7;
+}
+
+.text1 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+
+
+<div class="container">
+     <img src="./21.png">
+  <div class="textbox">
+    <div class="text">유난히 힘들어보였던 누군가에게<br>의지가 되어주지 못한 날이 있는가?</div>
+  </div>
+</div>
+<div class="container">
+     <img src="./22.png">
+  <div class="textbox">
+    <div class="text">왜 후회 하는가?
+  </div>
+</div>  
+</div>
+
+<div class="container1">
+     <img src="./23.png">
+  <div class="textbox1">
+    <div class="text1">기분이 좋지 않다고 다른 사람을 감정 쓰레기통 취급 한 적이 있는가?</div>
+  </div>
+</div>
+
+<div class="container1">
+     <img src="./24.png">
+  <div class="textbox1">
+    <div class="text1">왜 후회 하는가?
+  </div>
+</div>  
+</div>
+</body>
+</html>
